@@ -5,10 +5,18 @@
   box-shadow: var(--shadow-dark);
   min-height: 50vh;
 
+  @media only screen and (max-width: $bp-largest){
+    margin: 0;
+    max-width: 100%;
+  }
 }
 
 .content{
   display: flex;
+
+  @media only screen and (max-width:860px){
+    flex-direction: column;
+  }
 }
 
 .header{
@@ -51,6 +59,11 @@
   flex: 0 0 60%;
   padding: 3rem;
   margin-right: 4.5rem;
+
+  @media only screen and (max-width: 860px){
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 
 .user-reviews{
