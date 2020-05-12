@@ -24,10 +24,16 @@
   background-color: #fff;
   height: 9rem;
   border-bottom: var(--line);
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 415px){
+    flex-wrap: wrap;
+    height: 14rem;
+    align-content: space-around;
+  }
+
 }
 
 .sidebar{
@@ -51,6 +57,14 @@
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
 
+  @media only screen and (max-width: 860px){
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: 600px){
+    flex-direction: column;
+  }
+
 }
 
 .description{
@@ -64,6 +78,12 @@
     padding: 2rem;
     margin-right: 3rem;
   }
+
+  @media only screen and (max-width: 600px){
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
 }
 
 .user-reviews{
