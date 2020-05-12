@@ -289,6 +289,11 @@ body {
       .overview__heading {
         font-size: 1.8rem;
         padding: 1.2rem 2rem; } }
+    @media only screen and (max-width: 320px) {
+      .overview__heading {
+        font-size: 1.5rem;
+        padding: 1rem .5rem;
+        margin-right: 1rem; } }
   .overview__icon-stars {
     margin-right: auto;
     display: flex; }
@@ -296,6 +301,10 @@ body {
     height: 2rem;
     width: 2rem;
     fill: var(--color-primary); }
+    @media only screen and (max-width: 320px) {
+      .overview__icon-star, .overview__icon-location {
+        height: 1.5rem;
+        width: 1.5rem; } }
   .overview__location {
     display: flex;
     align-items: center;
@@ -322,6 +331,9 @@ body {
     @media only screen and (max-width: 460px) {
       .overview__rating-average {
         font-size: 1.8rem; } }
+    @media only screen and (max-width: 320px) {
+      .overview__rating-average {
+        margin-bottom: 0.5px; } }
   .overview__rating-count {
     font-size: 1rem;
     text-transform: uppercase; }

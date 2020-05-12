@@ -261,17 +261,29 @@
       font-size: 1.8rem;
       padding: 1.2rem 2rem;
     }
+
+    @media only screen and (max-width: 320px){
+      font-size: 1.5rem;
+      padding: 1rem .5rem;
+      margin-right: 1rem;
+    }
   }
 
   &__icon-stars{
     margin-right: auto;
     display: flex;
+    
   }
 
   &__icon-star,
   &__icon-location{
     height: 2rem;
     width: 2rem;
+
+    @media only screen and (max-width: 320px){
+      height: 1.5rem;
+      width: 1.5rem;
+    }
     fill: var(--color-primary);
   }
 
@@ -309,6 +321,10 @@
 
     @media only screen and (max-width: 460px){
       font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: 320px){
+      margin-bottom: 0.5px;
     }
   }
 
